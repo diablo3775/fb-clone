@@ -76,14 +76,13 @@ function Header() {
                 <IconButton>
                     <NotificationsActiveIcon />
                 </IconButton>
-                <IconButton>
-                    <div
+                <IconButton
                         id="basic-button"
                         aria-controls={open ? 'basic-menu' : undefined}
                         aria-haspopup="true"
                         aria-expanded={open ? 'true' : undefined}
-                        onClick={handleClick}
-                    >
+                        onClick={handleClick}>
+                    <div>
                         <ExpandMoreIcon />
                     </div>
                     <Menu
