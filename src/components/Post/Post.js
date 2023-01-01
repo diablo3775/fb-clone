@@ -34,11 +34,11 @@ function Post({ profilePic, image, username, timestamp, message, id, setPosts, p
                 <div className="dropdown__container end" style={{ justifyContent: "flex-end" }}>
                     <MoreHorizIcon />
                     <div className="dropdown-menu">
-                        <div className='edit__button' onClick={toggleModal}><EditIcon /><div className='edit__name'>Edit Post</div></div>
+                        <div className='edit__button' onClick={toggleModal}><EditIcon /><div className='edit__name'>Edit</div></div>
                         {
                             modal && <Modal closeModal={setModal} message={message} id={id} posts={posts} setPosts={setPosts} image={image} />
                         }
-                        <div className='delete__button' onClick={() => deletePost(id)}><DeleteIcon />Delete Post</div>
+                        <div className='delete__button' onClick={() => deletePost(id)}><DeleteIcon />Delete</div>
                     </div>
                 </div>
 
