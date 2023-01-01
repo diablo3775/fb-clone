@@ -1,0 +1,135 @@
+body.active-modal {
+    overflow-y: hidden;
+  }
+  .btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+  }
+  .modal,
+  .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+  }
+  .overlay {
+    background: rgba(49, 49, 49, 0.8);
+    border-radius: 10px;
+  }
+  .modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background-color: #fff;
+    padding: 14px 80px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+  }
+  .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+    cursor: pointer;
+  }
+  
+  .edit-button-profile {
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .edit-container {
+    cursor: pointer;
+    margin-left: auto;
+  }
+  
+  .edit-icon {
+    margin-left: auto;
+    padding-right: 0% !important;
+    padding: 8px;
+  }
+  
+  .copy-icon {
+    font-size: 1.7em;
+    cursor: pointer;
+    padding: 8px;
+  }
+  
+  .button-hide {
+    font-size: 1.7em;
+    border: none;
+    cursor: pointer;
+    background-color: white;}
+  
+  
+  .match-item {
+    font-family: Montserrat, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+  }
+  
+  /* Modal Delete */
+  .modalContainer {
+    width: 500px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    position: absolute;
+    left: -100%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background-color: #fff;
+    padding: 14px 80px;
+    border-radius: 15px;
+    max-width: 600px;
+    min-width: 300px;
+    border: 1px solid lightgray
+  }
+  
+  .modalContainer .title {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .modalContainer .body {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  
+  .modalContainer .footer {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContainer .footer button {
+    width: 100px;
+    height: 45px;
+    margin: 10px;
+    border: none;
+    background-color: #0091ff;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  #cancelBtn {
+    background-color: darkgray;
+  }
